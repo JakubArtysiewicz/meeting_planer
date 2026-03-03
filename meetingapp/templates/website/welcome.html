@@ -6,6 +6,11 @@
 </head>
 <body>
     <h1> Meeting Planer </h1>
-    <h2> Liczba spotkań: {{ meeting }}</h2>
+    <h2> Liczba spotkań: {{ meetings_count }}</h2>
+    <ol>
+        {% for meet in meetings %}
+        <li> <a href="/detail/{{meet.id}}"> {{  meet.title }} </a> </li>
+        {% endfor %}
+    </ol>
 </body>
 </html>

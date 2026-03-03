@@ -21,5 +21,5 @@ from meetingapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('' ,  views.welcome, name='welcome'),
-    path('detail/<int:id>', views.details, name='detail' ),
+    path('detail/<int:id>/', views.details, name='detail' ),
 ]
